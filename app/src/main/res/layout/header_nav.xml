@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_header"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/advanchercolor"
+    android:elevation="4dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/drawer_uImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@+id/drawer_email"
+        app:layout_constraintEnd_toStartOf="@+id/drawer_uName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drawer_uName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:singleLine="true"
+        android:text="Name:"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/drawer_uImage"
+        app:layout_constraintEnd_toStartOf="@+id/drawer_edit"
+        app:layout_constraintStart_toEndOf="@+id/drawer_uImage"
+        app:layout_constraintTop_toTopOf="@+id/drawer_uImage"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/drawer_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:capitalize="sentences"
+        android:text="Email:"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/drawer_edit"
+        app:layout_constraintStart_toStartOf="@+id/drawer_uImage"
+        app:layout_constraintTop_toBottomOf="@+id/drawer_uImage" />
+
+    <ImageView
+        android:id="@+id/drawer_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/drawer_uName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/drawer_uName"
+        app:layout_constraintTop_toTopOf="@+id/drawer_uName" />
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/useremail"
+            android:layout_width="0dp"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Virtual Private Network"/>
+        &lt;!&ndash;<ImageView
+
+            android:id="@+id/edit_profile"
+            android:layout_width="15dp"
+            android:background="@drawable/ic_edit"
+            android:layout_height="15dp" />
+&ndash;&gt;
+    </LinearLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

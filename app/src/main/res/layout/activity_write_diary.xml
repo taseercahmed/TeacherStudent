@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Write Diary"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/writeDiaryDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/writeDiaryDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_button1"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Date "
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text="Date "
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/writeDiaryDetail"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/writeDiaryDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_button1"
+        android:capitalize="sentences"
+        android:gravity="start|top|left"
+        android:hint="Diary"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightWhite"
+        app:layout_constraintBottom_toTopOf="@+id/writeDiaryUploadBtn"
+        app:layout_constraintEnd_toEndOf="@+id/writeDiaryDate"
+        app:layout_constraintStart_toStartOf="@+id/writeDiaryDate"
+        app:layout_constraintTop_toBottomOf="@+id/writeDiaryDate" />
+
+    <!--    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_button1"
+        app:layout_constraintBottom_toTopOf="@+id/writeDiaryUploadBtn"
+        app:layout_constraintEnd_toEndOf="@+id/writeDiaryDate"
+        app:layout_constraintStart_toStartOf="@+id/writeDiaryDate"
+        app:layout_constraintTop_toBottomOf="@+id/writeDiaryDate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/writeDiaryDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diary"
+            android:maxLines="7" />
+    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <Button
+        android:id="@+id/writeDiaryUploadBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_button2"
+        android:text="Post"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/writeDiaryCancelBtn"
+        app:layout_constraintEnd_toEndOf="@+id/writeDiaryDetail"
+        app:layout_constraintStart_toStartOf="@+id/writeDiaryDetail"
+        app:layout_constraintTop_toBottomOf="@+id/writeDiaryDetail" />
+
+    <Button
+        android:id="@+id/writeDiaryCancelBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ic_button2"
+        android:text="@android:string/cancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/writeDiaryUploadBtn"
+        app:layout_constraintStart_toStartOf="@+id/writeDiaryUploadBtn"
+        app:layout_constraintTop_toBottomOf="@+id/writeDiaryUploadBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

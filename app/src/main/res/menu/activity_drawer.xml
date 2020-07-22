@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_up">
+        <item
+            android:id="@+id/nav_home"
+            android:checkable="false"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            />
+
+        <item android:id="@+id/nav_timetable"
+            android:icon="@drawable/ic_timetable"
+            android:checkable="false"
+            android:title="Time Table"/>
+
+        <item android:id="@+id/nav_diaries"
+            android:icon="@drawable/ic_diary"
+            android:checkable="false"
+            android:title="Diaries"/>
+
+        <item android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_notes"
+            android:checkable="false"
+            android:title="Notes"/>
+
+        <item
+            android:id="@+id/nav_sent_notifications"
+            android:checkable="false"
+            android:icon="@drawable/ic_send_notification"
+            android:title="Send notification" />
+        <item android:id="@+id/result"
+            android:icon="@drawable/ic_notes"
+            android:checkable="false"
+            android:title="Result"/>
+
+        <item
+            android:id="@+id/nav_reset_password"
+            android:checkable="false"
+            android:icon="@drawable/ic_reset_password"
+            android:title="Reset Password"
+            />
+
+        <item android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:checkable="false"
+            android:title="Sharing is caring"/>
+
+        <item android:id="@+id/about_me"
+            android:checkable="false"
+            android:visible="false"
+            android:icon="@drawable/ic_about"
+            android:title="About us"/>
+
+        <item
+            android:id="@+id/sign_out"
+            android:checkable="false"
+            android:icon="@drawable/ic_signout"
+            android:title="Sign out"
+            />
+    </group>
+    
+</menu>

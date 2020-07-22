@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_background">
+
+
+        <ImageView
+            android:id="@+id/TT_clockImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_access_time_black_24dp"
+            android:tint="@color/lightWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/TT_timming"
+            app:layout_constraintEnd_toStartOf="@+id/TT_timming"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TT_timming"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/TT_timming"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="08:34"
+            android:textColor="@color/lightWhite"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/TT_subjectName"
+            app:layout_constraintEnd_toStartOf="@+id/menu_btn"
+            app:layout_constraintStart_toEndOf="@+id/TT_clockImg"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="16dp" />
+
+        <ImageView
+            android:id="@+id/menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:tint="@color/lightWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/TT_timming"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TT_timming"
+            app:layout_constraintTop_toTopOf="@+id/TT_timming"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp" />
+
+
+        <TextView
+            android:id="@+id/TT_subjectName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Subject Name"
+            android:textColor="@color/lightWhite"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/TT_teacherEmail"
+            app:layout_constraintEnd_toEndOf="@+id/menu_btn"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="@+id/TT_clockImg"
+            app:layout_constraintTop_toBottomOf="@+id/TT_timming"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/TT_teacherEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:padding="5dp"
+            android:text="Teacher Name"
+            android:textColor="@color/lightWhite"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/TT_roomNo"
+            app:layout_constraintStart_toStartOf="@+id/TT_subjectName"
+            app:layout_constraintTop_toBottomOf="@+id/TT_subjectName"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/TT_roomNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:text="Room No"
+            android:textColor="@color/lightWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TT_teacherEmail"
+            app:layout_constraintEnd_toEndOf="@+id/TT_subjectName"
+            app:layout_constraintStart_toEndOf="@+id/TT_teacherEmail"
+            app:layout_constraintTop_toTopOf="@+id/TT_teacherEmail"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

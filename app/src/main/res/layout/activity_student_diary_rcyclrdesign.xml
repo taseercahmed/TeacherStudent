@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="@drawable/card_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/SD_diaryDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:capitalize="sentences"
+        android:text="Diary detail"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/SD_diaryTime"
+        app:layout_constraintEnd_toEndOf="@+id/SD_senderEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SD_senderEmail"
+        app:layout_constraintTop_toBottomOf="@+id/SD_senderEmail" />
+
+    <TextView
+        android:id="@+id/SD_diaryTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="time"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/SD_diaryDetail"
+        app:layout_constraintTop_toBottomOf="@+id/SD_diaryDetail" />
+
+    <TextView
+        android:id="@+id/SD_diaryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="date"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SD_diaryTime"
+        app:layout_constraintEnd_toEndOf="@+id/SD_diaryDetail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/SD_diaryTime"
+        app:layout_constraintTop_toTopOf="@+id/SD_diaryTime"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/SD_senderEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:capitalize="sentences"
+        android:text="sender email"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/SD_diaryDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
